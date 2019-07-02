@@ -18,12 +18,12 @@
 					}
 				],
 				"url": {
-					"raw": "{{url}}/solarsytem/createDefault",
+					"raw": "{{url}}/solarsystem/createDefault",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"solarsytem",
+						"solarsystem",
 						"createDefault"
 					]
 				}
@@ -47,12 +47,12 @@
 					"raw": "{\r\n\t\"daysOfYear\": 365,\r\n\t\"planets\": [\r\n\t\t{\r\n\t\t\t\"name\": \"Ferengis\",\r\n\t\t\t\"distance\": 500,\r\n\t\t\t\"originX\": 500,\r\n\t\t\t\"originY\": 0,\r\n\t\t\t\"speed\": 1,\r\n\t\t\t\"rotation\": 0\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"name\": \"Betasoides\",\r\n\t\t\t\"distance\": 2000,\r\n\t\t\t\"originX\": 2000,\r\n\t\t\t\"originY\": 0,\r\n\t\t\t\"speed\": 3,\r\n\t\t\t\"rotation\": 0\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"name\": \"Vulcanos\",\r\n\t\t\t\"distance\": 1000,\r\n\t\t\t\"originX\": 1000,\r\n\t\t\t\"originY\": 0,\r\n\t\t\t\"speed\": 5,\r\n\t\t\t\"rotation\": 1\r\n\t\t}\r\n\t]\r\n}\r\n"
 				},
 				"url": {
-					"raw": "{{url}}/solarsytem",
+					"raw": "{{url}}/solarsystem",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"solarsytem"
+						"solarsystem"
 					]
 				}
 			},
@@ -71,12 +71,12 @@
 					}
 				],
 				"url": {
-					"raw": "{{url}}/solarsytem",
+					"raw": "{{url}}/solarsystem",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"solarsytem"
+						"solarsystem"
 					]
 				}
 			},
@@ -102,13 +102,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{url}}/solarsytem/5d1ab38752faff00012f3b1c",
+					"raw": "{{url}}/solarsystem/5d1afebf52faff00015a0ddb",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"solarsytem",
-						"5d1ab38752faff00012f3b1c"
+						"solarsystem",
+						"5d1afebf52faff00015a0ddb"
 					]
 				}
 			},
@@ -131,13 +131,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "{{url}}/solarsytem/5d1a6fbb46e0fb0001683d41",
+					"raw": "{{url}}/solarsystem/5d1afe3952faff00015a0dda",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"solarsytem",
-						"5d1a6fbb46e0fb0001683d41"
+						"solarsystem",
+						"5d1afe3952faff00015a0dda"
 					]
 				}
 			},
@@ -156,13 +156,13 @@
 					}
 				],
 				"url": {
-					"raw": "{{url}}/solarsytem/5d1ab38752faff00012f3b1c/clima/resumen",
+					"raw": "{{url}}/solarsystem/5d1afebf52faff00015a0ddb/clima/resumen",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"solarsytem",
-						"5d1ab38752faff00012f3b1c",
+						"solarsystem",
+						"5d1afebf52faff00015a0ddb",
 						"clima",
 						"resumen"
 					]
@@ -183,13 +183,13 @@
 					}
 				],
 				"url": {
-					"raw": "{{url}}/solarsytem/5d1ab38752faff00012f3b1c/clima",
+					"raw": "{{url}}/solarsystem/5d1afebf52faff00015a0ddb/clima",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"solarsytem",
-						"5d1ab38752faff00012f3b1c",
+						"solarsystem",
+						"5d1afebf52faff00015a0ddb",
 						"clima"
 					]
 				}
@@ -209,13 +209,13 @@
 					}
 				],
 				"url": {
-					"raw": "{{url}}/solarsytem/5d1ab38752faff00012f3b1c/clima?dia=25",
+					"raw": "{{url}}/solarsystem/5d1afebf52faff00015a0ddb/clima?dia=25",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"solarsytem",
-						"5d1ab38752faff00012f3b1c",
+						"solarsystem",
+						"5d1afebf52faff00015a0ddb",
 						"clima"
 					],
 					"query": [
