@@ -13,7 +13,7 @@ Weather predictor for solar systems
 
 ### Endpoint
 
-* <http://local:8080/solarsytem>
+* <http://local:8080/solarsystem>
 
 ## GCP deploy steps
 
@@ -26,5 +26,5 @@ Weather predictor for solar systems
 
 ### Endpoint
 
-* <http://solarsystemweather-245500.appspot.com/solarsytem>
+* <http://solarsystemweather-245500.appspot.com/solarsystem>
 
