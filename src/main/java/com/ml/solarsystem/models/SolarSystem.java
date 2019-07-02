@@ -8,57 +8,38 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import javax.validation.constraints.Min;
+import javax.validation.constraints.PositiveOrZero;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.ml.solarsystem.utils.MathUtils;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
 @Document(collection = "solarsystems")
 public class SolarSystem {
 	@Id
 	private String id;
+	
+	@Min(1)
 	private int daysOfYear;
-	private List<Planet> planets = new ArrayList<>();
-	private Map<Integer, Weather> weather;
+	
+	@PositiveOrZero
 	private int lastProcessedDay;
-
-	public SolarSystem() {}
+	
+	private List<Planet> planets = new ArrayList<>();
+	
+	private Map<Integer, Weather> weather = new HashMap<>();
 
 	public SolarSystem(List<Planet> planets) {
 		this.planets = planets;
-		this.weather = new HashMap<>();
-	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
-	public int getDaysOfYear() {
-		return daysOfYear;
-	}
-
-	public void setDaysOfYear(int daysOfYear) {
-		this.daysOfYear = daysOfYear;
-	}
-
-	public List<Planet> getPlanets() {
-		return planets;
-	}
-
-	public void setPlanets(List<Planet> planets) {
-		this.planets = planets;
-	}
-
-	public Map<Integer, Weather> getWeather() {
-		return weather;
-	}
-
-	public void setWeather(Map<Integer, Weather> weather) {
-		this.weather = weather;
 	}
 
 	public int getLastProcessedDay() {

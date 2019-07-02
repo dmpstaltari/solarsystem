@@ -14,5 +14,5 @@ gcloud app deploy app.yaml -v v1
 
 # Target URL
 
-https://solarsystemweather-245500.appspot.com
+http://solarsystemweather-245500.appspot.com/solarsystem
 

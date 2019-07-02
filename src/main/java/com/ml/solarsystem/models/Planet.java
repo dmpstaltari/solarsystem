@@ -2,10 +2,22 @@ package com.ml.solarsystem.models;
 
 import java.awt.geom.Point2D;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.PositiveOrZero;
+
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 
-import com.ml.solarsystem.dtos.PlanetDTO;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@ToString
 public class Planet {
 
 	public enum Rotation {
@@ -22,10 +34,30 @@ public class Planet {
 	    	return value;
 	    }
 	}
+	
+	@Id
+	@NotBlank
+	private String name;
 
-	public Planet() {
-		
-	}
+	@NotNull
+	@PositiveOrZero
+	private double distance;
+
+	@NotNull
+	@PositiveOrZero
+	private double speed;
+
+	@NotNull
+	private double originX;
+	
+	@NotNull
+	private double originY;
+
+	@NotNull
+	private Rotation rotation;
+	
+	@Transient
+	private double originAngle; 
 	
 	public Planet(String name, double distance, double speed, double originX, double originY, Rotation rotation) {
 		this.name = name;
@@ -34,89 +66,12 @@ public class Planet {
 		this.originY = originY;
 		this.speed = speed;
 		this.rotation = rotation;
+		this.originAngle =  this.calculateOriginAngle();
+	}
+	
+	public double calculateOriginAngle() {
 		this.originAngle =  Math.atan2(this.originY, this.originX);
-	}
-	
-	public Planet(PlanetDTO p){
-		this.name = p.getName();
-		this.distance = p.getDistance();
-		this.originX = p.getOriginX();
-		this.originY = p.getOriginY();
-		this.speed = p.getSpeed();
-		this.rotation = p.getRotation();
-		this.originAngle =  Math.atan2(this.originY, this.originX);
-	}
-	
-	@Id
-	private String name;
-
-	private double distance;
-
-	private double speed;
-
-	private double originX;
-	
-	private double originY;
-
-	private Rotation rotation;
-	
-	private double originAngle; 
-
-	
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public double getDistance() {
-		return distance;
-	}
-
-	public void setDistance(double distance) {
-		this.distance = distance;
-	}
-
-	public double getSpeed() {
-		return speed;
-	}
-
-	public void setSpeed(double speed) {
-		this.speed = speed;
-	}
-
-	public double getOriginX() {
-		return originX;
-	}
-
-	public void setOriginX(double originX) {
-		this.originX = originX;
-	}
-
-	public double getOriginY() {
-		return originY;
-	}
-
-	public void setOriginY(double originY) {
-		this.originY = originY;
-	}
-
-	public Rotation getRotation() {
-		return rotation;
-	}
-
-	public void setRotation(Rotation rotation) {
-		this.rotation = rotation;
-	}
-
-	public double getOriginAngle() {
-		return originAngle;
-	}
-	
-	public void calculateOriginAngle() {
-		this.originAngle =  Math.atan2(this.originY, this.originX);
+		return this.originAngle;
 	}
 
 	public Point2D.Double calculePosition(int day) {
@@ -129,17 +84,4 @@ public class Planet {
         return new Point2D.Double(x1, y1);
 	}
 	
-	
-	@Override
-	public String toString() {
-		return "Planet{" +
-				"name=" + name + 
-				", distance=" + distance +
-				", speed=" + speed +
-				", originX=" + originX +
-				", originY=" + originY +
-				", rotation=" + rotation +
-				", originAngle=" + originAngle +
-				'}';
-	}
 }

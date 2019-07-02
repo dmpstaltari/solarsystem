@@ -34,7 +34,7 @@ import com.ml.solarsystem.models.Weather;
 import com.ml.solarsystem.services.ISolarSystemService;
 
 @RestController
-@RequestMapping("/solarsytem")
+@RequestMapping("/solarsystem")
 @Validated
 public class SolarSystemController {
 

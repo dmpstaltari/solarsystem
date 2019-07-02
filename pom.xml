@@ -23,6 +23,7 @@
 		<docker.image.prefix>ml</docker.image.prefix>
 		<modelmapper.version>2.3.5</modelmapper.version>
 		<json.version>20180813</json.version>
+		<springfox-swagger2.version>2.9.2</springfox-swagger2.version>
 	</properties>
 
 	<dependencies>
@@ -58,7 +59,19 @@
 			<artifactId>lombok</artifactId>
 		</dependency>
 
-		</dependencies>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${springfox-swagger2.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${springfox-swagger2.version}</version>
+		</dependency>
+
+	</dependencies>
 
 	<build>
 		<plugins>
