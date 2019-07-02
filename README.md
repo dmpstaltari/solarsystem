@@ -1,10 +1,19 @@
 # Solar System WP
 Weather predictor for solar systems
 
-### Local deploy steps
+## API documentation
+
+* http://solarsystemweather-245500.appspot.com/swagger-ui.html
+* http://solarsystemweather-245500.appspot.com/v2/api-docs
+
+## Local deploy steps
 
 * mvn package docker:build
 * docker run -d -p 8080:8080 --name solarsystem ml/solarsystem:0.0.1-SNAPSHOT
+
+### Endpoint
+
+* <http://local:8080/solarsytem>
 
 ## GCP deploy steps
 
@@ -15,7 +24,7 @@ Weather predictor for solar systems
 * gcloud docker -- push gcr.io/solarsystemweather-245500/solarsystem:1.0.0
 * gcloud app deploy app.yaml -v v1 
 
-## Endpoints
+### Endpoint
 
-* <http://local:8080/solarsytem>
 * <http://solarsystemweather-245500.appspot.com/solarsytem>
+
