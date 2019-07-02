@@ -18,12 +18,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/solarsytem/createDefault",
-					"protocol": "http",
+					"raw": "{{url}}/solarsytem/createDefault",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "8080",
 					"path": [
 						"solarsytem",
 						"createDefault"
@@ -49,12 +47,10 @@
 					"raw": "{\r\n\t\"daysOfYear\": 365,\r\n\t\"planets\": [\r\n\t\t{\r\n\t\t\t\"name\": \"Ferengis\",\r\n\t\t\t\"distance\": 500,\r\n\t\t\t\"originX\": 500,\r\n\t\t\t\"originY\": 0,\r\n\t\t\t\"speed\": 1,\r\n\t\t\t\"rotation\": 0\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"name\": \"Betasoides\",\r\n\t\t\t\"distance\": 2000,\r\n\t\t\t\"originX\": 2000,\r\n\t\t\t\"originY\": 0,\r\n\t\t\t\"speed\": 3,\r\n\t\t\t\"rotation\": 0\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"name\": \"Vulcanos\",\r\n\t\t\t\"distance\": 1000,\r\n\t\t\t\"originX\": 1000,\r\n\t\t\t\"originY\": 0,\r\n\t\t\t\"speed\": 5,\r\n\t\t\t\"rotation\": 1\r\n\t\t}\r\n\t]\r\n}\r\n"
 				},
 				"url": {
-					"raw": "http://localhost:8080/solarsytem",
-					"protocol": "http",
+					"raw": "{{url}}/solarsytem",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "8080",
 					"path": [
 						"solarsytem"
 					]
@@ -75,12 +71,10 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/solarsytem",
-					"protocol": "http",
+					"raw": "{{url}}/solarsytem",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "8080",
 					"path": [
 						"solarsytem"
 					]
@@ -108,15 +102,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8080/solarsytem/5d1a5ca8d9e6053230bf7902",
-					"protocol": "http",
+					"raw": "{{url}}/solarsytem/5d1ab38752faff00012f3b1c",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "8080",
 					"path": [
 						"solarsytem",
-						"5d1a5ca8d9e6053230bf7902"
+						"5d1ab38752faff00012f3b1c"
 					]
 				}
 			},
@@ -139,15 +131,13 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "http://localhost:8080/solarsytem/5d1a6e3746e0fb00014b13ed",
-					"protocol": "http",
+					"raw": "{{url}}/solarsytem/5d1a6fbb46e0fb0001683d41",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "8080",
 					"path": [
 						"solarsytem",
-						"5d1a6e3746e0fb00014b13ed"
+						"5d1a6fbb46e0fb0001683d41"
 					]
 				}
 			},
@@ -166,15 +156,13 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/solarsytem/5d1a6fbb46e0fb0001683d41/clima/resumen",
-					"protocol": "http",
+					"raw": "{{url}}/solarsytem/5d1ab38752faff00012f3b1c/clima/resumen",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "8080",
 					"path": [
 						"solarsytem",
-						"5d1a6fbb46e0fb0001683d41",
+						"5d1ab38752faff00012f3b1c",
 						"clima",
 						"resumen"
 					]
@@ -195,15 +183,13 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/solarsytem/5d1a5ca8d9e6053230bf7902/clima",
-					"protocol": "http",
+					"raw": "{{url}}/solarsytem/5d1ab38752faff00012f3b1c/clima",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "8080",
 					"path": [
 						"solarsytem",
-						"5d1a5ca8d9e6053230bf7902",
+						"5d1ab38752faff00012f3b1c",
 						"clima"
 					]
 				}
@@ -223,21 +209,19 @@
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/solarsytem/5d19ac8dd9e60519b06df76a/clima?dia=0",
-					"protocol": "http",
+					"raw": "{{url}}/solarsytem/5d1ab38752faff00012f3b1c/clima?dia=25",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "8080",
 					"path": [
 						"solarsytem",
-						"5d19ac8dd9e60519b06df76a",
+						"5d1ab38752faff00012f3b1c",
 						"clima"
 					],
 					"query": [
 						{
 							"key": "dia",
-							"value": "0"
+							"value": "25"
 						}
 					]
 				}
