@@ -22,7 +22,7 @@
 		<maven-jar-plugin.version>3.1.1</maven-jar-plugin.version>
 		<docker.image.prefix>ml</docker.image.prefix>
 		<modelmapper.version>2.3.5</modelmapper.version>
-		<json.version>20180813</json.version>
+		<json.version>20230227</json.version>
 		<springfox-swagger2.version>2.9.2</springfox-swagger2.version>
 	</properties>
 
